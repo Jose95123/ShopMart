@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Página de Pago</title>
+	<!-- Font Awesome, Style -->
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/smoothproducts.css">
+</head>
+<body>
+<!-- Topbar Start -->
+<div class="topbar">
+	<div class="container">
+
+		<!-- Top Left -->
+		<div class="topleft">
+			<ul>
+				<li><a href="#">ESP <i class="fas fa-caret-down"></i></a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Top Center -->
+		<div class="topcenter">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="contactus.html" target="_blank">Contáctenos</a></li>
+				<li><a href="profile.html" target="_blank">Perfil de la Empresa</a></li>
+			</ul>
+		</div>
+
+		<!-- Top Right -->
+		<div class="topright">
+			<ul>
+				<li><a href="#"><i class="fas fa-phone"></i> +91-87504-xxxxx</a></li>
+				<li><a href="#"><i class="fas fa-user"></i> Mi Perfil <i class="fas fa-caret-down"></i></a>
+					<ul class="myprofile-dropdown">
+						<li><a href="#">Mi Carrito</a></li>
+						<li><a href="#">Pedido Entregado</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Header Start -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<img width="200" height="50" src="images/logo.png">
+		</div>
+		<div class="searchbar">
+			<form>
+				<input type="search" class="searchField" placeholder="Buscar productos y marcas">
+			</form>
+		</div>
+		<div class="headerright">
+			<ul>
+				<!-- <li><a href="#"><i class="fas fa-heart"></i> Lista de Deseos</a></li> -->
+				<li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+				<li><a href="#" class="signBtn">Iniciar Sesión & Registrarse</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Header End -->
+
+
+<!-- Checkout Start -->
+<div class="checkout">
+	<div class="container">
+		<h2>Tu Pedido</h2>
+
+		<!-- Checkout Inner Start -->
+		<script>
+			function done() {
+				alert("¡Pedido Realizado con Éxito!")
+			}
+		</script>
+		<div class="checkout-inner">
+			<form onsubmit="done()">
+				<div class="checkout-form-steps">
+					<h4>Detalles Personales</h4>
+					<input type="text" class="textfield" placeholder="Tu Nombre" required="">
+					<input type="email" class="textfield" placeholder="Tu Correo Electronico">
+					<input type="text" class="textfield" placeholder="Tu Número de Telefono">
+				</div>
+				<div class="checkout-form-steps">
+					<h4>Dirección de Envío</h4>
+					<select class="textfield">
+						<option>Seleccionar País</option>
+						<option>INDIA</option>
+						<option>USA</option>
+						<option>UK</option>
+						<option>UAE</option>
+					</select>
+					<select class="textfield">
+						<option>Seleccionar Estado</option>
+						<option>Estado 1</option>
+						<option>Estado 2</option>
+						<option>Estado 3</option>
+					</select>
+					<input type="text" class="textfield" placeholder="Dirección Completa">
+				</div>
+				<div class="checkout-form-steps">
+					<h4>Opciones de Envío</h4>
+					<label for="radio1">
+						<input type="radio" name="shippingoptions" id="radio1">
+						Entrega por mensajería - durante el día envío gratuito
+					</label>
+					<label for="radio2">
+						<input type="radio" name="shippingoptions" id="radio2">
+						Entrega Urgente - entrega en 1 hora envío gratuito
+					</label>
+					<label for="radio3">
+						<input type="radio" name="shippingoptions" id="radio3">
+						Recogida - puedes recoger de 9AM a 8PM
+					</label>
+				</div>
+				<div class="checkout-form-steps">
+					<h4>Opciones de Facturación</h4>
+					<label for="radio4">
+						<input type="radio" name="billingoptions" id="radio4">
+						En Efectivo
+					</label>
+					<label for="radio5">
+						<input type="radio" name="billingoptions" id="radio5">
+						Visa
+					</label>
+					<label for="radio6">
+						<input type="radio" name="billingoptions" id="radio6">
+						Banca Móvil
+					</label>
+					<label for="radio7">
+						<input type="radio" name="billingoptions" id="radio7">
+						Monedero
+					</label>
+				</div>
+				<input type="submit" class="submitorder-button" value="Realizar Pedido">
+			</form>
+		</div>
+		<!-- Checkout Inner End -->
+
+
+		<!-- Order List Start-->
+		<div class="orderlist">
+			<img src="images/2_tb.jpg">
+			<h3>Macbook Pro MQ032 14.5' Inter Core i7 5550U 8GB DDR3</h3>
+			<p>Cantidad : <span>1</span></p>
+			<p>Precio : <span><i class="fas fa-dollar-sign"></i> 1099</span></p>
+			<input type="text" class="textfield" placeholder="Código Promocional : STORE8888">
+			<input type="submit" class="applycode-button" value="Aplicar Código Promocional">
+			<p>Total del Pedido : <span><i class="fas fa-dollar-sign"></i> 1099</span></p>
+		</div>
+		<!-- Order List End-->
+
+	</div>
+</div>
+<!-- Checkout End -->
+
+<!-- Footer Start -->
+<div class="footer">
+	<div class="container">
+		<div class="col-3">
+			<p><big>Dirección EN:</big><br>Lovely Professional University, India</p>
+		</div>
+		<div class="col-3">
+			<ul>
+				<li><a href="#">Contacto en cualquier lugar</a></li>
+				<li><a href="#">Método de pago fácil</a></li>
+				<li><a href="#">Envío rápido</a></li>
+				<li><a href="#">Nuestra nueva marca</a></li>
+				<li><a href="#">Catálogo</a></li>
+			</ul>
+		</div>
+		<div class="col-3">
+			<ul>
+				<li><a href="contactus.html" target="_blank">Sobre nosotros</a></li>
+				<li><a href="#">Empleos</a></li>
+				<li><a href="#">Clientes corporativos</a></li>
+				<li><a href="#">Nuestros socios</a></li>
+				<li><a href="#">Términos de uso</a></li>
+				<li><a href="#">Anúnciate con nosotros</a></li>
+				<li><a href="#">Comparar bancos</a></li>
+			</ul>
+		</div>
+		<div class="col-3">
+			<ul>
+				<li><a href="#">Garantía</a></li>
+				<li><a href="#">Check-in</a></li>
+				<li><a href="#">Cómo realizar un pedido</a></li>
+				<li><a href="#">Cambio y devolución</a></li>
+				<li><a href="#">Instalación</a></li>
+				<li><a href="#">Calidad de los servicios</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Footer End -->
+
+
+<div class="copyright">
+	<div class="container">
+		<h5>&copy; 2020 shopmart.com | Creado por Gagan Yadav</h5>
+	</div>
+</div>
+
+<!-- Login Signup Form Start -->
+<div class="loginBox">
+	<div class="closeBtn"><i class="fas fa-times"></i></div>
+	<div class="loginForm">
+		<h3>Formulario de Inicio de Sesión</h3>
+		<form>
+			<input class="textField" type="text" placeholder="Nombre de Usuario o Correo Electrónico">
+			<input class="textField" type="password" placeholder="Contraseña">
+			<input class="submitBtn" type="submit" value="Iniciar Sesión">
+		</form>
+	</div>
+	<div class="registerForm">
+		<h3>Formulario de Registro</h3>
+		<form>
+			<input class="textField" type="text" placeholder="Nombre">
+			<input class="textField" type="text" placeholder="Apellido">
+			<input class="textField" type="email" placeholder="Tu Correo Electrónico">
+			<input class="textField" type="password" placeholder="Nueva Contraseña">
+			<input class="textField" type="password" placeholder="Confirmar Contraseña">
+			<input class="submitBtn" type="submit" value="Registrarse">
+		</form>
+	</div>
+</div>
+<!-- Login Signup Form End -->
+
+
+<!-- Product View Box / Quick Product View Start -->
+<div class="productViewBox">
+	<h3>Apple Macbook Pro MQ032 14.5' Inter Core i7 5550U 8GB DDR3</h3>
+	<div class="productViewBox-closeBtn"><i class="fas fa-times"></i></div>
+	<div class="productViewBoxImg">
+		<img src="images/img1.jpg">
+	</div>
+	<div class="productViewBoxDetail">
+		<h5><b>Precio : </b> <i class="fas fa-dollar-sign"></i> 598</h5>
+		<h5><b>Marca : </b> Apple</h5>
+		<h5><b>Garantía : </b> 12 Meses</h5>
+		<h5><b>Entrega en la ciudad : </b> Gratis</h5>
+		<h5><b>Pago : </b> Contra reembolso, Visa, Mastercard, Débito, Crédito, Instalación</h5>
+		<h5><b>Disponibilidad : </b> en Stock</h5>
+		<h5><b>Código de Producto : </b> GA000006488</h5>
+		<a href="#" class="addtocart"><i class="fas fa-heart"></i> Agregar al Carrito</a>
+		<a href="#" class="writereview"><i class="fas fa-pen"></i> Escribir una Reseña</a>
+		<a href="#" class="buynow"><i class="fas fa-shopping-cart"></i> Comprar Ahora</a>
+	</div>
+</div>
+<!-- Product View Box / Quick Product View End -->
+
+
+
+<!-- Jquery V.3.3.1 -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.cycle.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothproducts.min.js"></script>
+<script>
+	$("#sliderShuffle").cycle({
+		next: '#next',
+		prev: '#prev'
+	});
+
+	$('.owl-carousel').owlCarousel({
+		items:4,
+		loop:true,
+		margin:15,
+		autoplay:true,
+		autoplayTimeout:3000, //3 Segundo
+		nav:true,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:3,
+				nav:true
+			},
+			1000:{
+				items:4,
+				nav:true
+			}
+		}
+
+	});
+
+	$(function(){
+		$(".topbar ul li").click(function(){
+			$(".topbar ul li").not(this).find("ul").slideUp();
+			$(this).find("ul").slideToggle();
+		});
+		$(".topbar ul li ul li, productCategories ul li .megamenu").click(function(e){
+			e.stopPropagation();
+		});
+		$(".productCategories ul li").click(function(){
+			$(".productCategories ul li").not(this).find(".megamenu").hide();
+			$(this).find(".megamenu").toggle();
+		});
+		$(".otherInfoBody").hide();
+		$(".otherInfoHandle").click(function(){
+			$(".otherInfoBody").slideToggle();
+		});
+		$(".signBtn").click(function(){
+			$("body").css("overflow", "hidden");
+			$(".loginBox").slideDown();
+		});
+		$(".closeBtn").click(function(){
+			$("body").css("overflow", "visible");
+			$(".loginBox").slideUp();
+		});
+		$(".productViewBtn").click(function(e){
+			e.preventDefault();
+			$("body").css("overflow", "hidden");
+			$(".productViewBox").slideDown();
+		});
+		$(".productViewBox-closeBtn").click(function(){
+			$("body").css("overflow", "visible");
+			$(".productViewBox").slideUp();
+		});
+
+		$(".sp-wrap").smoothproducts();
+	});
+</script>
+</body>
+</html>
