@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
 
@@ -8,6 +8,9 @@
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -298,23 +301,15 @@
       <div id="sliderShuffle" class="sliderInner">
         <img src="images/1.jpg"/>
         <img src="images/2.jpg"/>
+        <img src="images/3.jpg"/>
+        <img src="images/4.jpg"/>
+        <img src="images/5.jpg"/>
       </div>
       <div class="cycle-control">
         <span id="next"><i class="fas fa-angle-right"></i></span>
         <span id="prev"><i class="fas fa-angle-left"></i></span>
       </div>
     </div>
-    <!-- Slider End -->
-
-    <!-- <div class="offer-card">
-        <img src="images/img1.jpg">
-    </div>
-    <div class="offer-card">
-        <img src="images/img2.jpg">
-    </div>
-    <div class="offer-card">
-        <img src="images/img3.jpg">
-    </div> -->
   </div>
 </div>
 <!-- Product Content End -->
@@ -684,6 +679,15 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.cycle.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="/dist/build.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+    });
+</script>
 <script>
   $("#sliderShuffle").cycle({
     next: '#next',

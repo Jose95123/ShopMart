@@ -1,44 +1,74 @@
+/* Robotic/Tech-inspired Card Style */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.5); /* Neon shadow */
   max-width: 300px;
   margin: auto;
   text-align: center;
+  background: linear-gradient(90deg, #0f0c29, #3a3d99, #24243e); /* Lighter blue gradient background */
+  border: 2px solid #00ffcc; /* Neon border */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('path/to/circuit-pattern.png') no-repeat center center; /* Circuit pattern */
+  opacity: 0.1;
+  z-index: 0;
 }
 
 .title {
-  color: grey;
+  color: #00ffcc; /* Neon text color */
   font-size: 18px;
+  text-shadow: 0 0 5px #00ffcc; /* Glowing text shadow */
+  z-index: 1;
+  position: relative;
 }
 
 button {
-  border: none;
+  border: 2px solid #00ffcc; /* Neon border */
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: #000; /* Black text color */
+  background-color: #00ffcc; /* Neon background */
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  box-shadow: 0 0 10px #00ffcc; /* Glowing shadow */
+  z-index: 1;
+  position: relative;
 }
 
 a {
   text-decoration: none;
   font-size: 22px;
-  color: black;
+  color: #00ffcc; /* Neon text color */
+  text-shadow: 0 0 5px #00ffcc; /* Glowing text shadow */
+  z-index: 1;
+  position: relative;
 }
 
 #home {
-  border: none;
+  border: 2px solid #00ffcc; /* Neon border */
   outline: 0;
   display: inline-block;
   padding: 1px;
-  color: white;
-  background-color: #000;
+  color: #000; /* Black text color */
+  background-color: #00ffcc; /* Neon background */
   text-align: center;
   cursor: pointer;
   font-size: 18px;
+  box-shadow: 0 0 10px #00ffcc; /* Glowing shadow */
+  z-index: 1;
+  position: relative;
 }
 
 #home_b {
@@ -51,9 +81,19 @@ a:hover {
 }
 
 #owner1 {
-    display:inline-block;
-    padding-right: 35px;
-    padding-left: 35px; 
-    margin-right: 70px;
-    margin-left: 70px;
+  display: inline-block;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-right: 70px;
+  margin-left: 70px;
+  color: #00ffcc; /* Neon text color */
+  text-shadow: 0 0 5px #00ffcc; /* Glowing text shadow */
+  z-index: 1;
+  position: relative;
+}
+
+body {
+  background-color: #1a1a2e; /* Dark blue background color */
+  color: #ffffff; /* White text color for better readability */
+  font-family: 'Roboto', sans-serif; /* Modern font */
 }
